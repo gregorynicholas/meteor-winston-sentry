@@ -10,6 +10,9 @@ Npm.depends({
 
 Package.on_use(function(api) {
 
+  api.use('coffeescript', 'server');
+  api.add_files('winston-sentry.coffee', 'server');
+
   api.export('Winston');
   api.export('WinstonSentry');
 
